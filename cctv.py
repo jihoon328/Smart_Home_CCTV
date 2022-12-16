@@ -20,9 +20,9 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     # more callbacks, etc
     # Create a file with write byte permission
-    distance = float(msg.payload.decode('utf-8'))
     
-    if(distance <15):
+    
+   
         a = datetime.datetime.now()
         date = str(datetime.datetime.now())
         date = date[:19]
